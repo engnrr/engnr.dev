@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cf98e1dd18.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<main class="font-sans text-xs leading-relaxed">
-    <div class="max-w-2xl p-4 mx-auto my-auto bg-gray-100 border-2 rounded-2xl border-gray-700 print:border-0 xsm:p-8 xsm:my-5 sm:p-9 sm:my-6 md:p-16 md:my-8 ">
+<main class="font-sans text-base font-light leading-relaxed">
+    <div class="max-w-4xl p-4 mx-auto my-auto bg-white border-2 rounded-2xl border-gray-700 print:border-0 xsm:p-8 xsm:my-5 sm:p-9 sm:my-6 md:p-16 md:my-8 ">
         <!--<header class="flex items-center justify-between h-20 px-4 leading-6 text-gray-700 border-b border-gray-200 border-solid sm:grid sm:auto-cols-auto sm:grid-cols-3 sm:px-6 lg:px-8">-->
         <!--    <nav class="flex sm:col-span-1" id="menu">-->
         <!--        <ol>-->
@@ -22,33 +22,41 @@
         <!--        </ol>-->
         <!--    </nav>-->
         <!--</header>-->
-        <section id="about" class="flex flex-row ">
+        <section id="about" class="flex flex-row space-x-5">
             <div class="basis-2/3">
-                <h2 class="text-xs font-semibold text-gray-500 pb-1 ">Python backend developer</h2>
-                <h1 class="text-2xl font-extrabold pb-2"><span class="font-light">Hi, I'm </span>Ivan Aleksashin</h1>
-                <p class="leading-relaxed pb-1 font-semibold">Have an EU work permit, looking for a remote job.</p>
-                <p class="leading-relaxed pb-1">Junior python developer with great learning agility and passion for
+                <h2 class="text-base font-semibold text-center text-gray-500 pb-1 border-0">Python backend developer</h2>
+                <h1 class="text-2xl font-black pb-5 text-center"><span class="font-light">Hi, I'm </span>Ivan Aleksashin</h1>
+                <p class="leading-relaxed pb-3 font-semibold text-center">Have an EU work permit, looking for a remote job.</p>
+                <p class="">Junior python developer with great learning agility and passion for
                     developing and architecture of
                     web
                     applications.
                     Have been a civil engineer for the last 12 years and currently studying to be a software
                     engineer.</p>
-                <p class="leading-relaxed pb-1">I write correct well-documented code and do thorough testing. Quick in
-                    coming up with solutions, but
-                    base them on
-                    a
-                    deep immersion in the documentation. Always open to comments and eager to benefit any working
+                <p class="">I write correct well-documented code and do thorough testing. Quick in
+                    coming up with solutions, but base them on a deep immersion in the documentation. Always open to
+                    comments and eager to benefit any working
                     environment.</p>
             </div>
-            <div class="basis-1/3  bg-gray-400">
-                <img class="mx-auto w-25 h-25 m-5 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+            <div class="basis-1/3 text-sm">
+                <img class="mx-auto w-36 h-36 m-5 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                      src="assets/avatar.jpg" alt="Bordered avatar">
-                <ul>
-                    <li><a href="mailto:aleksashin.dev@gmail.com">aleksashin.dev@gmail.com</a></li>
-                    <li>Telegram: <a href="https://t.me/engnr_dev">engnr_dev</a></li>
-                    <li>WhatsApp: +386 701 880 22</li>
-                    <li><a href="https://github.com/engnrr">github.com/engnrr</a></li>
+                <ul class="py-2">
+                    <li class="list-none"><i class="fa-regular fa-envelope"></i><a class="pl-1.5"
+                                                                                   href="mailto:aleksashin.dev@gmail.com">aleksashin.dev@gmail.com</a>
+                    </li>
+                    <li class="list-none"><i class="fa-brands fa-telegram"></i><a class="pl-1.5"
+                                                                                  href="https://t.me/engnr_dev">engnr_dev</a>
+                    </li>
+                    <li class="list-none"><i class="fa-brands fa-whatsapp"></i><span
+                            class="pl-1.5">+386 701 880 22</span></li>
+                    <li class="list-none"><i class="fa-brands fa-github"></i><a class="pl-1.5"
+                                                                                href="https://github.com/engnrr">github.com/engnrr</a>
+                    </li>
                 </ul>
+                <a href="assets/Resume_Ivan_Aleksashin.pdf"
+                   class="py-3 mt-5 px-8 lg:px-6 xl:px-10 inline-flex items-center justify-center text-center text-white text-base bg-gray-400 hover:bg-opacity-90 font-normal rounded-md">
+                    <i class="fa-regular fa-file-pdf"></i><span class="pl-1.5">Download resume</span></a>
             </div>
         </section>
         <section>
@@ -71,6 +79,8 @@
                     <a href="https://github.com/engnrr/Web-page-downloader"><i class="fa-brands fa-github"></i></a>
                 </h3>
                 <p class="stack">BeautifulSoup, requests, logging, pytest, Github CI/CD, poetry </p>
+                <p>A console program for downloading and saving a page from the Internet with resources (pictures,
+                    styles, js, etc.).</p>
                 <h4>Acquired skills:</h4>
                 <ul>
                     <li>working with HTTP requests, BeautifulSoup and requests libraries.</li>
@@ -85,7 +95,8 @@
                             class="fa-brands fa-github"></i></a>
                 </h3>
                 <p class="stack">Pytest, Github CI/CD, JSON, PyYaml, poetry</p>
-
+                <p>Command-line utility to determine differences between JSON or YAML format files. Ability to output
+                    data in JSON, plain and stylish formats. </p>
                 <h4>Acquired skills:</h4>
                 <ul>
                     <li>working with trees and tree recursion</li>
@@ -94,6 +105,83 @@
                     <li>code quality control using the Flake8 linter and the CodeClimate service</li>
                 </ul>
             </article>
+            <article>
+                <h3>Task manager <span class="font-light text-sm text-gray-650"><br/># in the development</span></h3>
+                <p class="stack">Django, PostgreSQL, pytest, Bootstrap, Docker, DigitalOcean</p>
+                <p>Web application for working with tasks, with the ability to perform basic operations on tasks (CRUD).
+                    There is a possibility to add statuses, labels, tags, assign and change a task performer.</p>
+            </article>
+            <article>
+                <h3>Real estate announcements parser + Telegram bot for notifications <span
+                        class="font-light text-sm text-gray-650"><br/># in the development</span></h3>
+                <p class="stack">Scrapy, Telegram API, aiogram, PostgreSQL, pytest, Docker, DigitalOcean</p>
+                <p>The service collects up-to-date announcements about renting and selling real estate using Scrapy.
+                    Clients can select suitable real estate options using filters and receive notifications of new
+                    listings on Telegram.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Work experience</h2>
+            <article>
+                <h3> GipGap studio <span class="font-light"> /  director, senior engineer  /  2014  - now</span></h3>
+                <p>Development of building documentation, construction and reconstruction of buildings.</p>
+                <ul>
+                    <li>Developed and supported the websites of the projects of the bureau.</li>
+                    <li>Optimized design through the use of scripts and smart blocks libraries.</li>
+                    <li>Implemented CRM for project management and knowledge base.</li>
+                    <li>Organized the work of a design bureau in Slovenia.</li>
+                    <li>Successfully implemented the development of project documentation and technical supervision of
+                        the construction of a restaurant, 4 hotels and 10 private houses.
+                    </li>
+                    <li>Launched an apartment project for digital nomads on Lake Bled</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Engineering company Hydronics <span class="font-light"> /  senior engineer  /  2010  - 2014</span>
+                </h3>
+                <p>Development of projects, organization of work of the design department, coordination with customers,
+                    technical supervision, and commissioning of equipment.</p>
+                <ul>
+                    <li>With a team of designers and contractors, more than 30 elite houses and 5 public projects were
+                        implemented, including
+                        <a href="https://skypark.ru/en/" target="_blank">SkyPark in Sochi</a>.
+                    </li>
+                    <li>Professionally grew from junior engineer to senior engineer.</li>
+                </ul>
+            </article>
+            <article>
+                <h3> Freelance <span class="font-light"> /  2006  - 2010</span></h3>
+                <p>Layout, installation and configuration of CMS (WordPress, Joomla), content management.</p>
+                <ul>
+                    <li>Launched and configured 12 websites for commercial and non-commercial clients.</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <h3 class="py-1">Hexlet.io / Python backend developer <span class="font-light"> / 2021 - now</span></h3>
+            <h3 class="py-1">Udemy / Development of Telegram bots in Python <span
+                    class="font-light"> / 2021 - now</span></h3>
+            <h3 class="py-1">MGSU - Moscow State University of Civil Engineering</h3>
+            <p>/ Master’s degree in heat and gas supply and ventilation / graduated in 2012</p>
+        </section>
+        <section>
+            <h2>Additional information</h2>
+            <ul>
+                <li><b>Languages:</b> English (B2), Slovenian (B1), Russian (native)</li>
+                <li><b>Location:</b> Bled, Slovenia (EU), timezone CET / GMT+2</li>
+            </ul>
+        </section>
+        <section>
+            <h2>About me</h2>
+            <p>Since being a pupil I was fond of web development, but followed in the footsteps of my family and started
+                to study as a civil engineer. During 12 years I've gone from a junior designer to a senior engineer of
+                the project. I want to realize my passion for web development. In the future, I want to create web
+                services in the real estate and construction industry.</p>
+            <p>I'm currently working on the final project at the courses and seeking a company where I will develop my
+                skills further and bring a lot of benefits. I’m going to quickly grow professionally by adapting my
+                teamwork skills on complex projects in the construction industry.
+            </p>
         </section>
     </div>
 </main>
