@@ -7,7 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        //sm: "1rem",
+        //base: "1rem", // 16px base
       },
       lineHeight: {
         snugish: "1.25",
