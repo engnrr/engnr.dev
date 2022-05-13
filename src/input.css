@@ -4,6 +4,9 @@
 
 @layer base {
 
+    section{
+        @apply;
+    }
     h2 {
         @apply text-xl mb-1 pb-4 pt-5 font-bold border-b border-slate-300;
     }
