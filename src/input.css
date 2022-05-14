@@ -5,7 +5,7 @@
 @layer base {
 
     main {
-        @apply min-h-screen font-sans text-base font-normal leading-8 md:bg-gray-100 md:py-10 md:px-5 px-4;
+        @apply min-h-screen font-sans text-base font-normal leading-8 md:bg-gray-100 md:py-10 md:px-5 px-2.5;
     }
     h2 {
         @apply text-2xl mb-2 pb-4 pt-6 font-bold border-b border-slate-300;
@@ -20,7 +20,7 @@
         @apply pb-3;
     }
     li {
-        @apply list-disc ml-10 pb-2;
+        @apply list-disc ml-6 md:ml-10 pb-2 ;
     }
     b {
         @apply font-bold;
