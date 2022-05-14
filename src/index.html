@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ivan Aleksashin</title>
+    <title>Ivan Aleksashin :: python backend developer</title>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -10,7 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link href="./output.css" rel="stylesheet" />
     <script
       crossorigin="anonymous"
       src="https://kit.fontawesome.com/cf98e1dd18.js"
@@ -19,23 +21,11 @@
   <body>
     <main>
       <div class="max-w-5xl p-4 mx-auto my-auto bg-white rounded-2xl md:p-16">
-        <div>
-          <!--<header class="flex items-center justify-between h-20 px-4 leading-6 text-gray-700 border-b border-gray-200 border-solid sm:grid sm:auto-cols-auto sm:grid-cols-3 sm:px-6 lg:px-8">-->
-          <!--    <nav class="flex sm:col-span-1" id="menu">-->
-          <!--        <ol>-->
-          <!--            <li><a href="#about">About</a></li>-->
-          <!--            <li><a href="#projects">About</a></li>-->
-          <!--            <li><a href="resume_ru.html">RUS</a></li>-->
-          <!--        </ol>-->
-          <!--    </nav>-->
-          <!--</header>-->
-        </div>
-
         <section class="flex flex-wrap content-center" id="about">
           <!--about-->
-          <div class="basis-2/3 grow">
+          <div class="basis-2/3 grow md:pr-4">
             <h2
-              class="text-lg font-semibold text-center text-gray-700 pb-2 border-0"
+              class="text-xl font-semibold text-center text-gray-700 pb-2 border-0"
             >
               Python backend developer
             </h2>
@@ -46,13 +36,13 @@
             <p class="leading-relaxed pb-6 font-semibold text-center">
               Have an EU work permit, looking for a remote job.
             </p>
-            <p class="">
-              Junior python developer with great learning agility and passion
-              for developing and architecture of web applications. Have been a
-              civil engineer for the last 12 years and currently studying to be
-              a software engineer.
+            <p>
+              Python developer with great learning agility and passion for
+              developing and architecture of web applications. Have been a civil
+              engineer for the last 12 years and currently making the transition
+              toward software development.
             </p>
-            <p class="">
+            <p>
               I write correct well-documented code and do thorough testing.
               Quick in coming up with solutions, but base them on a deep
               immersion in the documentation. Always open to comments and eager
@@ -64,7 +54,7 @@
             class="flex-1 basis-64 flex flex-wrap content-center items-center"
           >
             <!--img-->
-            <div class="mx-auto grow-0 w-56 h-56 m-5">
+            <div class="w-56 h-56 m-5 flex mx-auto">
               <img
                 alt="Avatar"
                 class="rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
@@ -72,7 +62,8 @@
               />
             </div>
             <!--contacts-->
-            <ul class="grow w-72 h-min py-2">
+            <div class="flex mx-auto md:justify-start">
+            <ul class="w-72 h-min py-2">
               <li class="list-none">
                 <i class="fa-regular fa-envelope"></i
                 ><a class="pl-1.5" href="mailto:aleksashin.dev@gmail.com"
@@ -84,21 +75,18 @@
                 ><a class="pl-1.5" href="https://t.me/engnr_dev">engnr_dev</a>
               </li>
               <li class="list-none">
-                <i class="fa-brands fa-whatsapp"></i
-                ><span class="pl-1.5">+386 701 880 22</span>
-              </li>
-              <li class="list-none">
                 <i class="fa-brands fa-github"></i
                 ><a class="pl-1.5" href="https://github.com/engnrr"
                   >github.com/engnrr</a
                 >
               </li>
             </ul>
+            </div>
             <div class="w-full"></div>
             <div class="flex mx-auto">
               <a
-                class="py-2.5 my-5 px-8 text-center text-white text-base bg-gray-600 hover:bg-opacity-90 font-normal rounded-md"
-                href="assets/Resume_Ivan_Aleksashin.pdf"
+                class="py-2.5 my-3 px-8 text-center text-white text-base bg-gray-600 hover:bg-opacity-90 font-normal rounded-md"
+                href="assets/CV_Ivan_Aleksashin.pdf"
               >
                 <span class="pl-1.5">Download CV in PDF</span></a
               >
@@ -106,13 +94,13 @@
           </div>
         </section>
         <section>
-          <h2 class="">Skills</h2>
+          <h2>Skills</h2>
           <ul>
             <li>
-              <b>Languages and frameworks:</b> Python, Flask, Django,
+              <b>Languages and frameworks:</b> Python, FastAPI, Django, Flask,
               PostgreSQL, HTML, CSS.
             </li>
-            <li><b>Tools:</b> Linux, Docker, Git, Github Actions.</li>
+            <li><b>Tools:</b> Linux, Bash, Docker, Git, Github CI/CD.</li>
             <li>
               <b>Soft skills:</b> fast learning and adaptability, teamwork on
               complex projects, project management, selection of optimal options
@@ -124,7 +112,7 @@
         <section id="projects">
           <h2>Projects</h2>
           <article>
-            <h3>
+            <h3 class="pb-2">
               Web page downloader (CLI) &nbsp;
               <a href="https://github.com/engnrr/Web-page-downloader"
                 ><i class="fa-brands fa-github"></i
@@ -151,9 +139,8 @@
             </ul>
           </article>
           <article>
-            <h3>
-              Difference generator for JSON and YAML &nbsp;
-              <a
+            <h3 class="pb-2">
+              Difference generator for JSON and YAML&nbsp;<a
                 href="https://github.com/engnrr/Difference-generator-for-JSON-and-YAML-files"
                 ><i class="fa-brands fa-github"></i
               ></a>
@@ -178,36 +165,26 @@
             </ul>
           </article>
           <article>
-            <h3 class="pb-1.5">Task manager</h3>
-            <p class="stack pb-0.5">
-              Django, PostgreSQL, pytest, Bootstrap, Docker, DigitalOcean
-            </p>
-            <p class="font-light text-base text-gray-650">
-              # in the development
-            </p>
-
-            <p>
-              Web application for working with tasks, with the ability to
-              perform basic operations on tasks (CRUD). There is a possibility
-              to add statuses, labels, tags, assign and change a task performer.
-            </p>
-          </article>
-          <article>
             <h3 class="pb-1.5">
-              Real estate announcements parser + Telegram bot for notifications
+              Service for estimating the cost of construction and repair
             </h3>
             <p class="stack">
-              Scrapy, Telegram API, aiogram, PostgreSQL, pytest, Docker,
-              DigitalOcean
+              FastAPI, PostgreSQL, pytest, Docker, AWS
             </p>
             <p class="font-light text-base text-gray-650">
               # in the development
             </p>
             <p>
-              The service collects up-to-date announcements about renting and
-              selling real estate using Scrapy. Clients can select suitable real
-              estate options using filters and receive notifications of new
-              listings on Telegram.
+              The service calculates the cost of building private houses and
+              small hotels in Slovenia. The calculation is made on the basis of
+              a parametric model of a typical building and current prices for
+              construction work and materials.
+            </p>
+            <p>
+              Using the REST API, user authentication and basic operations on
+              projects (CRUD) take place. The user can set the necessary
+              parameters of the building and site for the calculation. The
+              results are available in a general and detailed form.
             </p>
           </article>
         </section>
@@ -299,7 +276,9 @@
             Udemy / Development of Telegram bots in Python
             <span class="font-semibold text-lg"> / 2021 - now</span>
           </h3>
-          <h3 class="pt-4">MGSU - Moscow State University of Civil Engineering</h3>
+          <h3 class="pt-4">
+            MGSU - Moscow State University of Civil Engineering
+          </h3>
           <p class="font-semibold text-base leading-8">
             / Master’s degree in heat and gas supply and ventilation / graduated
             in 2012
@@ -331,6 +310,16 @@
             adapting my teamwork skills on complex projects in the construction
             industry.
           </p>
+        </section>
+        <section class="flex justify-center md:justify-start">
+          <div class="pt-6 pb-10 md:pb-2">
+            <a
+              class="py-3 my-3 px-10 text-center text-white text-lg font-semibold bg-gray-600 hover:bg-opacity-90 font-normal rounded-md"
+              href="mailto:aleksashin.dev@gmail.com"
+            >
+              <span class="pl-1.5">Hire me!</span></a
+            >
+          </div>
         </section>
       </div>
     </main>
